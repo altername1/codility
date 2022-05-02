@@ -32,13 +32,11 @@ function solution($N, $A) {
             if ($maxCounter < $counters[$value - 1]) {
                 $maxCounter = $counters[$value - 1];
             }
-            var_dump($counters);
             continue;
         }
         if ($value === $N + 1) {
             $counters = array_fill(0, $N, $maxCounter);
         }
-        var_dump($counters);
     }
     return $counters;
 }
